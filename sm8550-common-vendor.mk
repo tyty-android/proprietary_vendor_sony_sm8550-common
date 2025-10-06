@@ -15,15 +15,119 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/sony/sm8550-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_HDR.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_params.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_config.txt \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_params.txt \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.qti.media.secureprocessor.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.media.secureprocessor.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/jp.co.sony.mc.misctasdklibrary.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/jp.co.sony.mc.misctasdklibrary.xml \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/org.ifaa.android.manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/org.ifaa.android.manager.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -34,6 +138,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaAAC128.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC128.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaAAC256.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC256.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaAAC64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC64.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaMP3_128.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaMP3_128.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaMP3_160.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaMP3_160.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaMP3_192.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaMP3_192.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaPCM441.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaPCM441.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/DrangeparaPCM48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaPCM48.bin \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
@@ -68,6 +180,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/sony/sm8550-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/be_movie_spc:$(TARGET_COPY_OUT_VENDOR)/etc/be_movie_spc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/sony/sm8550-common/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -115,6 +228,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json \
@@ -147,6 +266,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
@@ -183,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -194,6 +315,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
@@ -206,6 +328,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.display@2.5-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.extlight-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.extlight-somc.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.ifaa@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.ifaa@1.0-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.mmwavedirection@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.mmwavedirection@1.1-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.secd@1.1-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.spc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.spc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.system.idd@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.system.idd@1.1-service.rc \
@@ -293,6 +417,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -404,9 +529,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
+    vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
+    vendor/sony/sm8550-common/proprietary/vendor/lib/dumb:$(TARGET_COPY_OUT_VENDOR)/lib/dumb
 
 PRODUCT_PACKAGES += \
+    libaudio-resampler \
     vendor.qti.diaghal-V1-ndk \
     vendor.qti.hardware.fm-V1-ndk \
     android.hardware.secure_element@1.0-impl \
@@ -465,6 +592,10 @@ PRODUCT_PACKAGES += \
     libApeSwDec \
     libCB \
     libCOSNet_spatial_qnn_quantized \
+    libDcfHalBleProto \
+    libDcfHalFramework \
+    libDcfHalLogger \
+    libDcfHalQtiMutex \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -487,6 +618,7 @@ PRODUCT_PACKAGES += \
     libQtiRilLoadable \
     libRbsFlow \
     libSNPE \
+    libSensorsInterface \
     libSnpeHtpV73Stub \
     libSonyDisplayProperties \
     libTouchInputVM \
@@ -632,6 +764,7 @@ PRODUCT_PACKAGES += \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
+    libmmwavemodule \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_datapath_proxy \
@@ -788,6 +921,7 @@ PRODUCT_PACKAGES += \
     libspl \
     libsplh \
     libssc \
+    libssc_default_listener \
     libssd \
     libstandbyfeature \
     libsubsystem_control \
@@ -988,6 +1122,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.secureprocessor.common@1.0-helper \
+    vendor.qti.hardware.secureprocessor.common@1.0_vendor \
+    vendor.qti.hardware.secureprocessor.config@1.0_vendor \
+    vendor.qti.hardware.secureprocessor.device@1.0_vendor \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
@@ -1038,11 +1176,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     vendor.semc.hardware.extlight-V1-ndk_platform \
+    vendor.semc.hardware.mmwavedirection@1.0 \
+    vendor.semc.hardware.mmwavedirection@1.1 \
     vendor.semc.hardware.spc-V1-ndk_platform \
     vendor.semc.system.idd@1.0 \
     vendor.semc.system.idd@1.1 \
     vendor.somc.hardware.aidlmiscta-V1-ndk_platform \
     vendor.somc.hardware.aidlradio-V1-ndk \
+    vendor.somc.hardware.ifaa@1.0_vendor \
     vendor.somc.hardware.miscta@1.0 \
     vendor.somc.hardware.nfc@1.0 \
     vendor.somc.hardware.radio@1.0 \
@@ -1142,14 +1283,28 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libAGC_recpp \
+    libANS_recpp \
+    libAdaptiveEQ_recpp \
+    libCompressor_recpp \
+    libHDR_recpp \
+    libHPFilter_recpp \
+    libLimiter_recpp \
+    libWNR \
+    libWNR_intf \
+    libaudiohalvendorextn \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
     libfm-hci \
+    libifaateeclientjni.sony \
     libimscamera_jni \
     libimsmedia_jni \
+    liblistenjni.qti \
+    liblistensoundmodel2.qti \
+    liblsmclient \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -1158,6 +1313,7 @@ PRODUCT_PACKAGES += \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
+    librecpp_intf \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
@@ -1175,6 +1331,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
+    qti-audio-types-aidl-V1-ndk \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -1193,12 +1350,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
+    vendor.qti.hardware.secureprocessor.common@1.0 \
+    vendor.qti.hardware.secureprocessor.config@1.0 \
+    vendor.qti.hardware.secureprocessor.device@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.somc.hardware.ifaa@1.0 \
     libQnnHtp_odm \
     libQnnHtpV73Stub_odm \
     CACertService \
@@ -1225,12 +1386,14 @@ PRODUCT_PACKAGES += \
     uimservicelibrary \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
+    com.qti.media.secureprocessor \
     com.quicinc.cne.api-V1.1-java \
     com.quicinc.cne.constants-V1.0-java \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
     dpmapi \
     jp.co.sony.mc.misctasdklibrary \
+    org.ifaa.android.manager \
     qcrilhook \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
@@ -1284,6 +1447,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.semc.hardware.extlight-somc.xml \
     vendor.somc.hardware.videoeffect.xml \
+    COSNet_spatial_8bit_quantized.serialized.bin \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1313,6 +1477,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor.qti.hardware.secureprocessor@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.soter@1.0-service \
@@ -1323,6 +1488,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.secure_element@1.2-service \
     vendor.semc.hardware.display@2.5-service \
     vendor.semc.hardware.extlight-service.somc \
+    vendor.semc.hardware.ifaa@1.0-service \
+    vendor.semc.hardware.mmwavedirection@1.1-service \
     vendor.semc.hardware.secd@1.1-service \
     vendor.semc.hardware.spc-service \
     vendor.semc.system.idd@1.1-service \
@@ -1365,6 +1532,8 @@ PRODUCT_PACKAGES += \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
+    qsap_dcfd \
+    qsap_location \
     qseecomd \
     qti \
     qtigetprop \
