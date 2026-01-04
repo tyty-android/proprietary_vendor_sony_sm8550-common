@@ -877,6 +877,7 @@ PRODUCT_PACKAGES += \
     libqti-utils \
     libqtigefar \
     libqtikeymaster4 \
+    libqtikeymaster4_teefix \
     libqtikeymint \
     librcc \
     librcmask \
@@ -1449,6 +1450,7 @@ PRODUCT_PACKAGES += \
     vendor.semc.hardware.extlight-somc.xml \
     vendor.somc.hardware.videoeffect.xml \
     COSNet_spatial_8bit_quantized.serialized.bin \
+    KmInstallKeybox \
     adpl \
     adsprpcd \
     cdsprpcd \

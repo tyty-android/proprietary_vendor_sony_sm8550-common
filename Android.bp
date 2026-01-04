@@ -10563,6 +10563,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqtikeymaster4_teefix",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqtikeymaster4_teefix.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcrypto",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libkeymasterdeviceutils",
+                "libkeymasterutils",
+                "libbase",
+                "libqcbor",
+                "android.hardware.keymaster@4.0",
+                "android.hardware.keymaster@4.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqtikeymint",
     owner: "sony",
     strip: {
@@ -24277,6 +24312,39 @@ sh_binary {
     owner: "sony",
     src: "proprietary/vendor/bin/COSNet_spatial_8bit_quantized.serialized.bin",
     filename: "COSNet_spatial_8bit_quantized.serialized.bin",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "KmInstallKeybox",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/KmInstallKeybox",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libcrypto",
+                "libkeymasterprovision",
+                "libqmi_cci",
+                "libqmiservices",
+                "libkeymasterutils",
+                "libkeymasterdeviceutils",
+                "libqtikeymaster4_teefix",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
