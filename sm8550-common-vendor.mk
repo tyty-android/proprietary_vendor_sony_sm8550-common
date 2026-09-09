@@ -261,6 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -875,6 +876,7 @@ PRODUCT_PACKAGES += \
     libqti-util \
     libqti-utils \
     libqtigefar \
+    libqtiidentitycredential \
     libqtikeymaster4 \
     libqtikeymaster4_teefix \
     libqtikeymint \
@@ -1367,9 +1369,9 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
+    EuiccMemoryReset \
     uimgbaservice \
     EuiccGoogle \
-    EuiccMemoryReset \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
@@ -1432,6 +1434,7 @@ PRODUCT_PACKAGES += \
     dataconnection-saidl.xml \
     deviceinfo-saidl.xml \
     manifest_android.hardware.drm-service.widevine.xml \
+    manifest_identity_credential.xml \
     qcrilhook-saidl.xml \
     qms-saidl.xml \
     qtiradio-saidl.xml \
@@ -1466,6 +1469,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.gnss-aidl-service-qti \
+    android.hardware.identity-service-qti \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
     qcrilNrd \
